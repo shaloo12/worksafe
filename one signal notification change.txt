@@ -1,0 +1,22 @@
+
+
+one signal change for live 
+1. frontend admin panel
+change in this file
+D:\xampp\htdocs\captain-india-phase-2\public\index.html
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "72acf895-0883-4691-90c4-a235689129bb",
+    });
+  });
+</script>
+
+2. backend change
+/home3/anekazcu/public_html/clientprojects/captainindiatest2.anekalabs.com/backend/application/models/Api_model.php
+
+$fields = array(
+// 'app_id' => "67ec0441-3085-4e29-8f11-ebc163cf0cc2", //live
+'app_id' => "72acf895-0883-4691-90c4-a235689129bb",
